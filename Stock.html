@@ -1,0 +1,58 @@
+<!doctype HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title> Assignment 11</title>
+		<script src="https://www.gstatic.com/charts/loader.js"></script>
+		<script src="stock.js" defer></script>
+		<link rel="stylesheet" type="text/css" href="stock.css">
+		<style>
+		.hidden {
+			display: inline;
+		}
+		table, td, th {
+			border: 1px solid black;
+		}
+		</style>
+	</head>
+	<body>
+		<table id="stockTable">
+			<tr>
+				<th colspan="9">Julia and Courtney's Stock Table</th>
+			</tr>
+		   <tr>
+		     <th id="symbol">Symbol</th>
+			 <th>Company Name</th>
+			 <th id="openValue">Open</th>
+			 <th id="closeValue">Close</th>
+			 <th>High</th>
+			 <th>Low</th>
+			 <th>Volume</th>
+			 <th>Print Chart</th>
+			 <th>Add to Portfolio</th>
+		   </tr>
+		   
+		</table>
+		<table id="portfolioTable">
+			<tr>
+			<th colspan="6">Julia and Courtney's Portfolio Table</th>
+			</tr>
+		   <tr>
+		     <th id="symbol1">Symbol</th>
+			 <th>Company Name</th>
+			 <th id="openValue1">Shares Owned</th>
+			 <th id="closeValue1">Previous Value</th>
+			 <th>Current Value</th>
+			 <th>% Change</th>
+		   </tr>
+		</table>
+		
+		<div id="stockSelectorDiv" class="hidden">
+		Stock symbol <input type="text" id="tickerSymbol" placeholder="ticker">
+		Earliest date <input type="date" id="earliestDate">
+		Latest date <input type="date" id="latestDate">
+		<input type="button" value="Get Stock Data" id="getDataButton"></div>
+		
+		<div id="chart_div"></div>
+	</body>
+</html>

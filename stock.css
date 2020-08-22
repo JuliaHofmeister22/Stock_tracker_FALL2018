@@ -1,0 +1,41 @@
+#stockTable {
+	width: 70%;
+	position: relative; 
+	left: 210px;
+	top: 100px;
+}
+
+#stockSelectorDiv {
+	padding-top: 10px;
+	position: relative; 
+	left: 210px;
+	top: 0px;
+}
+th {
+	height: 50px;
+}
+#getDataButton, #addButton, #chartButton {
+	border-radius: 6px;
+	background-color: lightblue;
+}
+body {
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLyNhKgu6w8o0951K3TfNvN1okiplOJrqKDyflfqnmStwLWF5hNA");
+	background-size: cover;
+}
+
+#chart_div { 
+	visibility: visible;
+	padding-top: 10px;
+	width: 70%;
+	position: relative; 
+	left: 210px;
+	top: 0px;
+}
+
+#portfolioTable {
+	visibility: hidden; 
+	width: 70%;
+	position: relative; 
+	left: 210px;
+	top: 500px;
+}
